@@ -1,0 +1,127 @@
+<style type="text/css">
+#body {
+	display: flex;
+	flex-direction: column;
+}
+#header {
+	position: fixed;
+	width: 100%;
+	background-color: orange;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	margin-top: -10px;
+	z-index: 1;
+	padding-top: 5px;
+	padding-right:10px;
+}
+#header-img {
+	width: 100%;
+	grid-column: 1;
+	align-self: center;
+}
+#nav-bar {
+	grid-column: 2;
+	align-self: center;
+	justify-self: right;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.nav-link {
+	text-decoration: none;
+	color: black;
+	margin:10px;
+}
+#main {
+	background-color: hsl(20 60% 80%);
+	position: relative;
+	top:70px;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	size:auto-fill;
+}
+#signup {
+	flex-direction: column;
+	text-align: center;
+	margin-top: 10px;
+}
+#email {
+	margin: 10px;
+	width: 40%;
+}
+#Features {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.section {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	align-items: center;
+}
+.images {
+	width: 75%;
+	justify-self: center;
+	align-self: center;
+}
+#video {
+	margin: auto;
+	padding: 50px;
+	min-width:35%;
+}
+#Pricing {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	padding-top: -10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 20px;
+}
+.priceoption {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+}
+.pricetitle {
+	display: flex;
+	flex-direction: column;
+	background-color: gray;
+	text-align: center;
+	min-width: 100%;
+	padding-bottom: 30px;
+	margin-top: -10px;
+}
+.price {
+	text-align: center;
+}
+.pricetitle3 {
+	text-align: center;
+	background-color: gray;
+	min-width: 100%;
+	padding-bottom: 4px;
+	margin-top: -10px;
+}
+ul {
+	list-style-type: none;
+}
+@media (max-width: 600px) {
+	#header {
+		grid-template-columns: 100px 1fr;
+		height: 12vh;}}
+#footer {
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 100%
+	align-self: flex-end;
+	margin-top:50px;
+}
+.p {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+}
+</style>
